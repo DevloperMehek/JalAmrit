@@ -145,4 +145,3 @@ h1, h2, h3, h4, h5, .font-display {
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
 "
-Observation: Overwrite successful: /app/frontend/src/index.css
