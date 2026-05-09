@@ -1,11 +1,4 @@
-<Plan>
-- Backend: 1 leads endpoint (POST/GET) saving to MongoDB
-- Frontend: 5 pages (Home, Products, Services, About, WhyPureWater) + Header/Footer/FloatingButtons/BookNowModal + EN/HI lang context
-- Lead delivery: save to DB + open WhatsApp pre-filled to 8878803764
-- Use Shadcn Carousel, Tabs, Dialog. Outfit + Mukta fonts.
-
-Creating all files in parallel:
-Action: file_editor create /app/backend/server.py --file-text "from fastapi import FastAPI, APIRouter, HTTPException
+"from fastapi import FastAPI, APIRouter, HTTPException
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -109,4 +102,3 @@ logger = logging.getLogger(__name__)
 async def shutdown_db_client():
     client.close()
 "
-Observation: Overwrite successful: /app/backend/server.py
